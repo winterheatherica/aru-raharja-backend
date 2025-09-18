@@ -1,0 +1,18 @@
+# .cargo/config.toml
+# Environment configuration for building Diesel + PostgreSQL on local Windows (MSVC).
+# Do not remove this file. Cargo needs these paths to find PostgreSQL headers and libraries.
+# If you are building on Linux/WSL/Server, adjust the paths according to your PostgreSQL installation.
+
+[env]
+# Path to PostgreSQL libraries (libpq.lib)
+PQ_LIB_DIR = "C:\\Program Files\\PostgreSQL\\17\\lib"
+
+# Path to PostgreSQL headers (libpq-fe.h)
+PQ_INCLUDE_DIR = "C:\\Program Files\\PostgreSQL\\17\\include"
+
+# Ensure MSVC linker can find libraries and headers
+LIB = "C:\\Program Files\\PostgreSQL\\17\\lib"
+INCLUDE = "C:\\Program Files\\PostgreSQL\\17\\include"
+
+# Add PostgreSQL bin folder to PATH (for pg_config, psql, etc.)
+PATH = "C:\\Program Files\\PostgreSQL\\17\\bin"

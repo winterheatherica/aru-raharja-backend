@@ -1,0 +1,28 @@
+# === Rust / Cargo ===
+/target/
+/Cargo.lock
+
+# === Diesel ===
+/diesel.toml
+/migrations/**/down.sql
+/migrations/**/up.sql
+
+# === Env files ===
+.env
+.env.*
+
+# === VSCode / IDE ===
+.vscode/
+.idea/
+
+# === Windows / OS ===
+*.exe
+*.dll
+*.pdb
+*.lib
+Thumbs.db
+Desktop.ini
+
+# === Logs / temp ===
+*.log
+/tmp/
