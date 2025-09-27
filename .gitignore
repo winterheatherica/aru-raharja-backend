@@ -2,11 +2,6 @@
 /target/
 /Cargo.lock
 
-# === Diesel ===
-/diesel.toml
-/migrations/**/down.sql
-/migrations/**/up.sql
-
 # === Env files ===
 .env
 
